@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Opus</title>
+  <link rel="stylesheet" type="text/css" href="assets/introjs.css">
+  <link rel="stylesheet" type="text/css" href="assets/opus.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" type="text/css">
+  
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <script src="./node_modules/aplayer/dist/APlayer.min.js"></script>
+
+  <link rel="icon"
+      type="image/png"
+      href="https://s3-us-west-2.amazonaws.com/opus-pro/opus-logo.png">
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107561721-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107561721-2');
+  </script>
+</head>
+
+<body id='body-step'>
+    <div class="header-div">
+      <div class='header-contents'>
+        <div class="header-left">
+          <img class='header-logo' src="https://s3-us-west-2.amazonaws.com/opus-pro/opus-logo.png">
+          <h1 class='header-title'>OPUS</h1>
+        </div>
+
+        <div class="search-div">
+          <form class='search-form'>
+            <input class='search-input' placeholder="Type an artist you like here, then press enter to start exploring." id='search-step'>
+          </form>
+        </div>
+
+        <div class="header-right">
+          <a class='github-link' target='_blank' href="https://github.com/MichaelMCoates">
+            <img class='github-link-image' src="https://avatars1.githubusercontent.com/u/9919?v=4">
+          </a>
+          <a class='linkedin-link' target='_blank' href="https://www.linkedin.com/in/michaelmcoates/">
+            <img class='linkedin-link-image' src="http://www.capillaryconsulting.com/wp-content/uploads/2016/02/linkedin-logo.png">
+          </a>
+          <a class='about-me' target='_blank' href="http://www.michaelmcoates.com">
+            ABOUT ME
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='main-body'>
+      <button class='center-zoom-button' id='center-zoom-step'>CENTER</button>
+      <button class='reset-button' id='reset-step'>RESET</button>
+      <button class='tour-button'>TOUR</button>
+      <div class="svg-div"></div>
+    </div>
+
+
+    <div class="artist-box" id='artist-box-step'>
+      <div class="player-div"></div>
+      <div class="next-button-div"></div>
+    </div>
+
+    <div class="directions-box">
+      <div class="drag">
+        <div class="drag-text">
+          Click and Drag to Move the Graph
+        </div>
+        <img class="drag-img" src="https://d30y9cdsu7xlg0.cloudfront.net/png/72154-200.png" alt="">
+      </div>
+      <div class="click">
+        <div class="click-text">
+          Click an Artist to Fetch
+        </div>
+        <img class="click-img" src="https://d30y9cdsu7xlg0.cloudfront.net/png/2030-200.png" alt="">
+      </div>
+      <div class="zoom">
+        <div class="zoom-text">
+          Scroll to Zoom In and Out
+        </div>
+        <div class="mouse"><div class="wheel"></div></div>
+      </div>
+    </div>
+ </body>
+
+<footer>
+  <script type="text/javascript" src="lib/intro.js"></script>
+  <script type="text/javascript" src="lib/util.js"></script>
+  <script type="text/javascript" src="lib/player.js"></script>
+  <script type="text/javascript" src="lib/forces.js"></script>
+  <script type="text/javascript" src="lib/intro_settings.js"></script>
+  <script type="text/javascript" src="lib/array_helpers.js"></script>
+  <script type="text/javascript" src="lib/page_setup.js"></script>
+  <script type="text/javascript" src="lib/d3.js"></script>
+</footer>
+</html>
